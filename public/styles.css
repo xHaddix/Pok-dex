@@ -1,42 +1,96 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     text-align: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    color: #FF6347;
+    background-color: #f7d02c;
+    padding: 20px;
+    margin: 0;
 }
 
 form {
-    margin: 20px 0;
-}
-
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #FF6347;
-    color: white;
-    border: none;
-    cursor: pointer;
+    margin: 20px;
 }
 
 #pokemon-info {
+    margin: 20px;
+}
+
+.pokemon-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.pokemon-card img {
+    max-width: 100px;
+    height: auto;
+}
+
+.tab-container {
     margin-top: 20px;
 }
 
-#pokemon-info img {
-    max-width: 150px;
+.tab {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
 }
 
-#pokemon-info p {
-    font-size: 18px;
-    margin: 10px 0;
+.tab-content {
+    display: none;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: #f7d02c;
+}
+
+/* Estilos para las barras de progreso */
+.stats-bar {
+    position: relative;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.stats-bar span {
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    width: 0; /* Inicia en 0 para animar */
+    text-align: center;
+    color: white;
+    line-height: 30px; /* Alinea el texto verticalmente */
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    transition: width 1s ease;
 }
