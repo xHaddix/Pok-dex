@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    background-color: #f7d02c;
+    background-color: #ce4421;
     padding: 20px;
     margin: 0;
 }
@@ -15,8 +15,26 @@ form {
     margin: 20px;
 }
 
+input{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(192, 165, 165);
+    padding: 5px;
+    width: 190px;
+}
+
 #pokemon-info {
+
     margin: 20px;
+}
+
+.pokemon-card-shiny{
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
 }
 
 .pokemon-card {
@@ -24,7 +42,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
-    text-align: left;
+    text-align: center;
 }
 
 .pokemon-card img {
@@ -85,7 +103,7 @@ thead {
 .stats-bar span {
     display: block;
     height: 100%;
-    background-color: #4caf50;
+    background-color: #b96464;
     width: 0; /* Inicia en 0 para animar */
     text-align: center;
     color: white;
